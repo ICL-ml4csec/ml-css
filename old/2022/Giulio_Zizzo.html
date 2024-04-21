@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <style>
+  img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+      }
+  </style>
+  <title>ML-CSS@ICL - Giulio Zizzo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bikin - v4.3.0
+  * Template URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">ML-CSS@ICL</a></h1> 
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/mlcss.png" alt="" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto " href="index.html#details">Details</a></li>
+          <li><a class="nav-link scrollto" href="index.html#speakers">Keynote Speakers</a></li>          
+          <li><a class="nav-link scrollto" href="index.html#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="index.html#organisers">Organisers</a></li> 
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="align-items-center">
+    <div class="container d-flex flex-column align-items-center justify-content-center"  style="padding-bottom: 2%">
+      <a href="https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Giulio.Zizzo2"><img src="assets/img/giulio.jpeg" class="img-fluid" alt="Dr Giulio Zizzo" width=200></a>
+      <br/> <br/>
+      <a href="https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Giulio.Zizzo2"><h3>Dr Giulio Zizzo</h3></a>
+      <p class="fst-italic">
+         Research Staff Member at IBM Research
+      </p>
+      <p>Giulio is a Research Staff Member at IBM Research. He is part of the Security and Privacy team researching secure and robust machine learning. Giulio obtained his PhD from Imperial College London focusing on adversarial machine learning. During his PhD he worked with FeedForward AI, a startup developing AI solutions for the music industry. Prior, he worked at BAE Systems and interned at Kamioka Observatory, a Nobel prize winning institution.
+      </p>
+      <br/><br/>
+      <p><i>Scroll down for more details...</i></p>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <section id="talks" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <br/>
+
+          <h2>Certified Federated Adversarial Training</h2>
+          <p> Keynote Talk </p>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+    
+    <section id="prof" class="features" data-aos="fade-up">
+      <div class="container">
+        <div class="section-title">
+          <p>Federated Learning (FL) is a recent paradigm to train neural networks in a decentralised manner without users needing to share their data. Instead, users only share a locally trained model with a central server to update a globally shared model. This offers privacy advantages for the users as their data remains local, and significant compute savings for the central server as it does not need to perform the model training itself.
+          <br/><br/>
+          I will begin with an overview of the current security challenges in FL. Despite tantalising us with the vision of private and decentralised training, in practice there are several problems. FL is not as private as we had first hoped. Recent works have shown in certain cases a user's data can be exactly reconstructed. Even abandoning the idea of privacy, and just retaining the compute advantages, FL leaves us with a system that is highly exposed to attacks. In fact, the classical FL setup is completely vulnerable to just a single malicious user.
+          <br/><br/>
+          To meet these challenges, there has been research on construing robust FL training algorithms to block the influence of potentially many malicious users collaborating to subvert a ML model. However, these robust algorithms fundamentally require the number of malicious users to be constrained in relation to the number of benign users. All bets are off if this is not the case, and in that situation the attackers can arbitrarily control the resulting model. Benign user numbers can vary as they can join a FL training round at will, or participate based on factors such as idle system status, or power and WiFi connectivity. On the other hand, attackers can concentrate their numbers and efforts at key points to gain control of the model.
+          <br/><br/>
+          I will then present some of my recent research aiming for security guarantees in this scenario. To be able to defend in such a hostile environment, we narrow our focus on achieving secure adversarial training in a federated fashion. We turn to methods of certifying neural networks arising out of abstract interpretation to give us the tools needed to analyse a user's model updates in a principled manner. With this, we can detect stealthy attacks and block corrupted model updates. This defence can preserve adversarial robustness even against arbitrary numbers of adaptive attackers with perfect knowledge.
+          <br/><br/>
+          Finally, to give a broader outlook on FL and machine learning security I will conclude with a high level overview of the wider research undertaken by the ML Security and Privacy team at IBM Research. This includes stealthily embedding entire datasets in GANs, homomorphic encryption in FL, machine unlearning, and the development of several open source toolkits.
+          </p>
+
+        </div>
+      </div>
+    
+    </section><!-- End Scholarship Section -->
+      
+    <!-- ======= Services Section ======= -->
+    <section id="footer" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <br/><br/><br/>
+          <h2>See you there <img src="assets/img/smile.png" class="img-fluid" alt=":)" width=50></h2>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
